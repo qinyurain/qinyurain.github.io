@@ -71,17 +71,8 @@
     letter-spacing:.01em;
   }
   .seal{
-    width:54px;height:54px;flex:none;
-    background:var(--cinnabar);
-    border-radius:5px;
-    display:grid;place-items:center;
-    transform:rotate(-2deg) translateY(.45rem);
-    box-shadow:0 1px 0 rgba(0,0,0,.06) inset;
-  }
-  .seal span{
-    font-family:'Noto Serif SC',serif;font-weight:600;
-    color:var(--paper);font-size:1.15rem;line-height:1.15;
-    writing-mode:vertical-rl;letter-spacing:.1em;
+    height:clamp(84px,9vw,110px);width:auto;flex:none;
+    transform:translateY(.15rem);
   }
   .hero-sub{
     margin-top:1.8rem;max-width:34em;
@@ -196,7 +187,7 @@
     <p class="hero-eyebrow">Economist · Urbanization &amp; Green Transition</p>
     <div class="hero-name-row">
       <h1>Yu&nbsp;Qin</h1>
-      <div class="seal" aria-hidden="true"><span>秦雨</span></div>
+      <img class="seal" src="seal.png" alt="秦雨（篆刻印）">
     </div>
     <p class="hero-sub">I study how China urbanizes and decarbonizes — housing and land, infrastructure, air and carbon, and the people whose lives these policies reshape — with a preference for <em>clean causal identification on questions that matter</em>.</p>
     <p class="hero-aff">Visiting Chair Professor, Guanghua School of Management, Peking University<br>Lum Chang Chair Professor, NUS Business School (on leave)</p>
@@ -369,7 +360,7 @@
         </div>
         <div class="body">
           <p><span class="zh" style="font-weight:600;">《房价的逻辑》</span> · SDX Joint Publishing (<span class="zh">三联书店</span>), forthcoming 2026.</p>
-          <p>A book for general readers on the economic logic beneath China's housing prices — what two decades of evidence actually say, told without jargon.</p>
+          <p>A book for general readers on the economic logic beneath China's housing prices — what two decades of evidence actually say, told without jargon and without ideology.</p>
           <p style="font-size:.9rem;color:var(--ink-light);">Cover art and purchase links will appear here upon release.</p>
         </div>
       </div>
