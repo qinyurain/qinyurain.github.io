@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yu Qin 秦雨 — Economist</title>
+<meta name="description" content="Yu Qin (秦雨) — economist working on China's urbanization, housing, and green transition. Guanghua School of Management, Peking University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F7F5EF;
+    --paper-deep:#F1EEE6;
+    --mist:#C8CDC7;
+    --ink-light:#8E958F;
+    --ink-mid:#5C6560;
+    --ink:#26292B;
+    --cinnabar:#A63A2B;
+    --indigo:#46565F;
+    --max:1060px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Spectral',Georgia,serif;
+    font-weight:300;
+    font-size:17px;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  .zh{font-family:'Noto Serif SC',serif;}
+  a{color:var(--indigo);text-decoration:none;border-bottom:1px solid var(--mist);transition:color .25s,border-color .25s;}
+  a:hover{color:var(--cinnabar);border-color:var(--cinnabar);}
+  a:focus-visible{outline:2px solid var(--cinnabar);outline-offset:3px;border-bottom-color:transparent;}
+
+  /* ---------- nav ---------- */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;justify-content:space-between;align-items:center;
+    padding:1.1rem 2rem;
+    background:linear-gradient(to bottom,rgba(247,245,239,.92),rgba(247,245,239,0));
+    backdrop-filter:blur(2px);
+  }
+  nav .mark{font-family:'Noto Serif SC',serif;font-size:1.05rem;letter-spacing:.35em;color:var(--ink-mid);border:none;}
+  nav ul{display:flex;gap:2rem;list-style:none;}
+  nav ul a{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-mid);border:none;}
+  nav ul a:hover{color:var(--cinnabar);}
+  @media(max-width:720px){nav ul{display:none;}}
+
+  /* ---------- hero ---------- */
+  header{
+    min-height:96vh;
+    display:flex;flex-direction:column;justify-content:center;
+    position:relative;overflow:hidden;
+    padding:0 2rem;
+  }
+  .hero-inner{max-width:var(--max);margin:0 auto;width:100%;position:relative;z-index:2;padding-bottom:22vh;}
+  .hero-eyebrow{
+    font-size:.8rem;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--ink-light);margin-bottom:1.6rem;
+  }
+  .hero-name-row{display:flex;align-items:flex-start;gap:1.6rem;flex-wrap:wrap;}
+  h1{
+    font-family:'Cormorant Garamond',serif;
+    font-weight:300;
+    font-size:clamp(3rem,8vw,5.4rem);
+    line-height:1.02;
+    letter-spacing:.01em;
+  }
+  .seal{
+    width:64px;height:64px;flex:none;
+    background:var(--cinnabar);
+    border-radius:6px;
+    display:grid;place-items:center;
+    transform:rotate(-2.5deg) translateY(.55rem);
+    box-shadow:0 1px 0 rgba(0,0,0,.06) inset;
+  }
+  .seal span{
+    font-family:'Noto Serif SC',serif;font-weight:600;
+    color:var(--paper);font-size:1.35rem;line-height:1.15;
+    writing-mode:vertical-rl;letter-spacing:.1em;
+  }
+  .hero-sub{
+    margin-top:1.8rem;max-width:34em;
+    font-size:1.06rem;color:var(--ink-mid);
+  }
+  .hero-sub em{font-style:italic;}
+  .hero-aff{
+    margin-top:1.2rem;font-size:.86rem;letter-spacing:.05em;color:var(--ink-light);
+  }
+
+  /* mountains */
+  .mountains{
+    position:absolute;left:0;right:0;bottom:0;z-index:1;
+    pointer-events:none;line-height:0;
+  }
+  .mountains svg{width:100%;height:auto;display:block;}
+  .drift-a{animation:drift 46s ease-in-out infinite alternate;}
+  .drift-b{animation:drift 62s ease-in-out infinite alternate-reverse;}
+  @keyframes drift{from{transform:translateX(0);}to{transform:translateX(-2.2%);}}
+  @media(prefers-reduced-motion:reduce){
+    .drift-a,.drift-b{animation:none;}
+    .reveal{opacity:1 !important;transform:none !important;}
+  }
+
+  /* ---------- sections ---------- */
+  section{padding:6.5rem 2rem;}
+  section:nth-of-type(even){background:var(--paper-deep);}
+  .wrap{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:110px 1fr;gap:2.5rem;}
+  @media(max-width:720px){.wrap{grid-template-columns:1fr;gap:1.2rem;}}
+  .side{
+    display:flex;flex-direction:column;align-items:flex-start;gap:.8rem;
+  }
+  .side .zi{
+    font-family:'Noto Serif SC',serif;font-weight:400;
+    font-size:2.6rem;color:var(--mist);
+    writing-mode:vertical-rl;letter-spacing:.4em;
+    user-select:none;
+  }
+  @media(max-width:720px){.side .zi{writing-mode:horizontal-tb;font-size:1.6rem;}}
+  h2{
+    font-family:'Cormorant Garamond',serif;font-weight:400;
+    font-size:2rem;letter-spacing:.02em;margin-bottom:1.6rem;
+  }
+  .rule{width:2.4rem;height:1px;background:var(--cinnabar);margin-bottom:2rem;}
+  .body p+p{margin-top:1.1rem;}
+  .body{max-width:44em;}
+
+  /* research streams */
+  .streams{display:grid;grid-template-columns:repeat(3,1fr);gap:2.2rem;margin-top:2.4rem;}
+  @media(max-width:860px){.streams{grid-template-columns:1fr;}}
+  .stream h3{
+    font-family:'Cormorant Garamond',serif;font-weight:500;
+    font-size:1.25rem;margin-bottom:.5rem;
+  }
+  .stream .zh-tag{font-size:.8rem;color:var(--ink-light);display:block;margin-bottom:.7rem;letter-spacing:.12em;}
+  .stream p{font-size:.94rem;color:var(--ink-mid);}
+
+  /* publications */
+  .pub{padding:1.4rem 0;border-bottom:1px solid rgba(0,0,0,.07);}
+  .pub:first-of-type{border-top:1px solid rgba(0,0,0,.07);}
+  .pub .title{font-weight:400;font-style:italic;font-size:1.05rem;}
+  .pub .meta{font-size:.85rem;color:var(--ink-light);margin-top:.25rem;letter-spacing:.03em;}
+  .placeholder{color:var(--cinnabar);font-size:.82rem;letter-spacing:.05em;}
+
+  /* book */
+  .book-grid{display:grid;grid-template-columns:180px 1fr;gap:3rem;align-items:start;}
+  @media(max-width:720px){.book-grid{grid-template-columns:1fr;}}
+  .book-cover{
+    aspect-ratio:2/3;background:linear-gradient(160deg,#EDE9DF, #DDD8CC);
+    border:1px solid rgba(0,0,0,.08);
+    display:grid;place-items:center;text-align:center;padding:1rem;
+    box-shadow:6px 8px 0 rgba(0,0,0,.045);
+  }
+  .book-cover .zh{font-size:1.3rem;font-weight:600;letter-spacing:.2em;writing-mode:vertical-rl;color:var(--ink-mid);}
+
+  /* talks / service lists */
+  .plain{list-style:none;}
+  .plain li{padding:.7rem 0;border-bottom:1px solid rgba(0,0,0,.06);display:flex;gap:1.4rem;align-items:baseline;}
+  .plain .when{flex:none;width:5.4rem;font-size:.8rem;letter-spacing:.08em;color:var(--ink-light);}
+  .plain .what{font-size:.97rem;}
+
+  /* contact / footer */
+  footer{
+    padding:5rem 2rem 3rem;text-align:center;position:relative;overflow:hidden;
+  }
+  footer .zh-line{font-family:'Noto Serif SC',serif;color:var(--ink-light);letter-spacing:.5em;font-size:.9rem;margin-bottom:1.4rem;}
+  footer .mail{font-size:1.1rem;}
+  footer .fine{margin-top:2.6rem;font-size:.75rem;color:var(--ink-light);letter-spacing:.06em;}
+
+  /* reveal on scroll */
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;}
+  .reveal.in{opacity:1;transform:none;}
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="mark zh">秦雨</span>
+  <ul>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#book">Book</a></li>
+    <li><a href="#speaking">Speaking</a></li>
+    <li><a href="#service">Service</a></li>
+    <li><a href="cv.pdf">CV</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Economist · Urbanization &amp; Green Transition</p>
+    <div class="hero-name-row">
+      <h1>Yu&nbsp;Qin</h1>
+      <div class="seal" aria-hidden="true"><span>秦雨</span></div>
+    </div>
+    <p class="hero-sub">I study how China urbanizes and decarbonizes — housing and land, infrastructure, air and carbon, and the people whose lives these policies reshape — with a preference for <em>clean causal identification on questions that matter</em>.</p>
+    <p class="hero-aff">Visiting Chair Professor, Guanghua School of Management, Peking University<br>Lum Chang Chair Professor, NUS Business School (on leave)</p>
+  </div>
+
+  <div class="mountains" aria-hidden="true">
+    <!-- far range -->
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none" class="drift-a" style="opacity:.35;position:relative;">
+      <path fill="#C8CDC7" d="M0,240 C120,200 200,140 320,150 C420,158 480,220 590,210 C700,200 760,110 880,120 C990,129 1050,205 1160,200 C1280,195 1340,150 1440,170 L1440,320 L0,320 Z"/>
+    </svg>
+    <!-- mid range -->
+    <svg viewBox="0 0 1440 260" preserveAspectRatio="none" class="drift-b" style="opacity:.55;margin-top:-160px;position:relative;">
+      <path fill="#9AA39D" d="M0,220 C140,190 230,120 360,135 C480,149 540,205 660,195 C790,184 850,95 980,105 C1090,113 1150,190 1260,185 C1350,181 1400,160 1440,168 L1440,260 L0,260 Z"/>
+    </svg>
+    <!-- near range -->
+    <svg viewBox="0 0 1440 200" preserveAspectRatio="none" style="margin-top:-110px;position:relative;">
+      <path fill="#5C6560" d="M0,180 C160,160 260,90 400,105 C530,119 600,175 730,165 C860,155 930,80 1060,92 C1170,102 1240,165 1350,160 C1390,158 1420,150 1440,152 L1440,200 L0,200 Z"/>
+    </svg>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="side"><span class="zi zh">人</span></div>
+    <div>
+      <h2 class="reveal">About</h2>
+      <div class="rule reveal"></div>
+      <div class="body reveal">
+        <p>I am an applied economist working at the intersection of urban, environmental, and real estate economics. My research asks how China's built environment — its housing markets, transport networks, and energy systems — shapes and is shaped by public policy, and what the country's green transition means for firms, workers, and families.</p>
+        <p>I hold a PhD in Applied Economics from Cornell University and a B.A. in Finance with a B.S. in Statistics from Peking University. My work has been cited 2,700+ times (Google Scholar), and I am listed among the World's Top 2% Scientists in Economics (2024, 2025) and IDEAS/RePEc's top 1% of female economists by publications over the past decade. I received the AsREAP Women Achievement Award in 2026.</p>
+        <p>I serve as Co-Editor of the <em>Journal of Environmental Economics and Management</em> and of <em>China Economic Review</em>. I also run <a href="https://impactful-research.github.io/">Impactful Research</a>, a platform devoted to cultivating research taste among young scholars in China.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <div class="side"><span class="zi zh">研</span></div>
+    <div>
+      <h2 class="reveal">Research</h2>
+      <div class="rule reveal"></div>
+      <div class="streams">
+        <div class="stream reveal">
+          <h3>Environmental Economics</h3>
+          <span class="zh-tag zh">碳中和 · 空气污染与治理</span>
+          <p>The economics of carbon neutrality — decarbonizing buildings, transportation, and enterprises — together with air pollution's economic consequences and the governance structures that succeed, or fail, in controlling it.</p>
+        </div>
+        <div class="stream reveal">
+          <h3>Urban Economics</h3>
+          <span class="zh-tag zh">交通 · 房地产市场</span>
+          <p>How transport infrastructure and housing and land markets shape China's cities — where people and firms locate, how prices form, and who gains from the geography that results.</p>
+        </div>
+        <div class="stream reveal">
+          <h3>Public Policy &amp; Labor</h3>
+          <span class="zh-tag zh">公共政策与劳动力</span>
+          <p>How public policy moves labor markets, household decisions, and demographic outcomes — from migration restrictions and fertility policy to civil-service reform.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap">
+    <div class="side"><span class="zi zh">文</span></div>
+    <div>
+      <h2 class="reveal">Selected Publications</h2>
+      <div class="rule reveal"></div>
+      <div class="body reveal">
+        <!-- Entries drawn from CV (Sept 2026). To add more, copy a .pub block. -->
+        <div class="pub">
+          <div class="title">From Employer Responsibility to Environmental Irresponsibility: Unintended Effects of Social Insurance Law on Emissions</div>
+          <div class="meta">with Yanan Li and Wenjun Wang · <em>Management Science</em>, accepted</div>
+        </div>
+        <div class="pub">
+          <div class="title">English's Significance: Exam Performance by Subject and Future Income in China</div>
+          <div class="meta">with Ruixue Jia, Hongbin Li, Qiuyi Wang and Jing Wu · <em>Journal of Development Economics</em>, 2026</div>
+        </div>
+        <div class="pub">
+          <div class="title">Green Regulation, Trade Friendliness, and Local Policy Adaptation</div>
+          <div class="meta">with Xinming Du and Yu Xie · <em>Journal of Environmental Economics and Management</em>, 2026</div>
+        </div>
+        <div class="pub">
+          <div class="title">From Connections to Merit: Anti-corruption Reform and Occupational Mobility in China's Civil Service</div>
+          <div class="meta">with Geer Ang, Ya Tan and Fan Zhang · <em>Economic Journal</em>, 2025</div>
+        </div>
+        <div class="pub">
+          <div class="title">Sea Level Rise Risks, Adaptation Strategies, and Real Estate Prices in Singapore</div>
+          <div class="meta">with Sumit Agarwal, Tien Foo Sing and Changwei Zhan · <em>Journal of Public Economics</em>, 2025</div>
+        </div>
+        <div class="pub">
+          <div class="title">The Impact of Fertility Relaxation on the Gender Wage Gap</div>
+          <div class="meta">with Sumit Agarwal, Keyang Li, Jing Wu and Jubo Yan · <em>Journal of Human Resources</em>, forthcoming</div>
+        </div>
+        <div class="pub">
+          <div class="title">The Local Labor Market Effect of Relaxing Internal Migration Restrictions: Evidence from China</div>
+          <div class="meta">with Lei An, Jing Wu and Wei You · <em>Journal of Labor Economics</em>, 2024 · ESI top 1% cited, Economics &amp; Business</div>
+        </div>
+        <div class="pub">
+          <div class="title">Disguised Pollution: Industrial Activities in the Dark</div>
+          <div class="meta">with Sumit Agarwal, Yajie Han and Hongjia Zhu · <em>Journal of Public Economics</em>, 2023</div>
+        </div>
+        <div class="pub">
+          <div class="title">Water Conservation through Plumbing and Nudging</div>
+          <div class="meta">with Sumit Agarwal, Eduardo Araral, Mingxuan Fan and Huanhuan Zheng · <em>Nature Human Behaviour</em>, 2022 · Nature Research Highlight</div>
+        </div>
+        <div class="pub">
+          <div class="title">Impact of High-Speed Rail on Road Traffic and Greenhouse Gas Emissions</div>
+          <div class="meta">with Yatang Lin, Jing Wu and Mandi Xu · <em>Nature Climate Change</em>, 2021</div>
+        </div>
+        <div class="pub">
+          <div class="title">Tax Evasion, Capital Gain Taxes, and the Housing Market</div>
+          <div class="meta">with Sumit Agarwal, Keyang Li, Jing Wu and Jubo Yan · <em>Journal of Public Economics</em>, 2020</div>
+        </div>
+        <div class="pub">
+          <div class="title">Negotiating Housing Deal on a Polluted Day: Consequences and Possible Explanations</div>
+          <div class="meta">with Jing Wu and Jubo Yan · <em>Journal of Environmental Economics and Management</em>, 2019</div>
+        </div>
+        <div class="pub">
+          <div class="title">Run Away? Air Pollution and Emigration Interests in China</div>
+          <div class="meta">with Hongjia Zhu · <em>Journal of Population Economics</em>, 2018</div>
+        </div>
+        <div class="pub">
+          <div class="title">"No County Left Behind?" The Distributional Impact of High-Speed Rail Upgrades in China</div>
+          <div class="meta">solo-authored · <em>Journal of Economic Geography</em>, 2017 · ESI top 1% cited, Social Sciences</div>
+        </div>
+        <p style="margin-top:1.6rem;font-size:.9rem;color:var(--ink-mid);">Full list on <a href="https://scholar.google.com/citations?user=DgeF5dIAAAAJ&amp;hl=en">Google Scholar</a> · <a href="cv.pdf">CV (PDF)</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap">
+    <div class="side"><span class="zi zh">著</span></div>
+    <div>
+      <h2 class="reveal">Book</h2>
+      <div class="rule reveal"></div>
+      <div class="book-grid reveal">
+        <div class="book-cover" aria-label="房价的逻辑 book cover placeholder">
+          <span class="zh">房价的逻辑</span>
+        </div>
+        <div class="body">
+          <p><span class="zh" style="font-weight:600;">《房价的逻辑》</span> · SDX Joint Publishing (<span class="zh">三联书店</span>), forthcoming 2026.</p>
+          <p>A book for general readers on the economic logic beneath China's housing prices — what two decades of evidence actually say, told without jargon and without ideology.</p>
+          <p style="font-size:.9rem;color:var(--ink-light);">Cover art and purchase links will appear here upon release.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="speaking">
+  <div class="wrap">
+    <div class="side"><span class="zi zh">讲</span></div>
+    <div>
+      <h2 class="reveal">Speaking</h2>
+      <div class="rule reveal"></div>
+      <div class="body reveal">
+        <ul class="plain">
+          <li><span class="when">2026.12</span><span class="what">Keynote, 13th Annual Natural Experiments Workshop (ANEW), Melbourne</span></li>
+          <li><span class="when">2026.07</span><span class="what"><span class="zh">「AI时代，研究中什么仍然稀缺？」</span> — lecture at Camphor Economics Summer School</span></li>
+          <li><span class="when">2026.06</span><span class="what">Keynote, 13th International Workshop on Regional, Urban, and Spatial Economics in China (RUSE)</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="service">
+  <div class="wrap">
+    <div class="side"><span class="zi zh">编</span></div>
+    <div>
+      <h2 class="reveal">Editorial &amp; Service</h2>
+      <div class="rule reveal"></div>
+      <div class="body reveal">
+        <ul class="plain">
+          <li><span class="when">Co-Editor</span><span class="what"><em>Journal of Environmental Economics and Management</em></span></li>
+          <li><span class="when">Co-Editor</span><span class="what"><em>China Economic Review</em></span></li>
+          <li><span class="when">Ed. Board</span><span class="what"><em>Journal of Economic Geography</em></span></li>
+          <li><span class="when">Founder</span><span class="what"><a href="https://impactful-research.github.io/">Impactful Research</a> — an editorial platform for research taste</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <p class="zh-line zh">远山淡影 · 文章千古</p>
+  <p class="mail"><a href="mailto:qinyurain@gmail.com">qinyurain@gmail.com</a></p>
+  <p class="fine">© 2026 Yu Qin · Guanghua School of Management, Peking University</p>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    for(const e of entries){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
